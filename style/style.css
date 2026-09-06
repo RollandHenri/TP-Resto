@@ -178,6 +178,12 @@ header .headerTitle p {
   background: url(/assets/img/store-01.jpg) center/cover;
 }
 
+main {
+  padding-bottom: 150px;
+  background: url("/assets/img/bg-menu-01.jpg") center/cover no-repeat;
+  background-position-y: 350px;
+}
+
 .mainTop {
   display: flex;
   flex-direction: column;
@@ -204,4 +210,47 @@ header .headerTitle p {
   font-family: roboto;
   text-decoration: underline;
   text-underline-offset: 15px;
+}
+
+.mainCenter {
+  position: relative;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: white;
+  font-family: roboto;
+}
+.mainCenter .mainCenterTable {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.mainCenter .mainCenterTable .table {
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  padding: 20px;
+  align-items: center;
+}
+.mainCenter .mainCenterTable .tablePic img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+.mainCenter .mainCenterTable .tableDesc {
+  text-align: start;
+}
+.mainCenter .mainCenterTable .tableDesc h5 {
+  text-transform: uppercase;
+}
+.mainCenter .mainCenterTable .tableDesc p {
+  text-transform: capitalize;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+.mainCenter .mainCenterTable .tablePrice {
+  color: orange;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
