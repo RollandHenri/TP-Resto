@@ -1,0 +1,27 @@
+.mainTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  .orange {
+    margin: 30px auto;
+    font-size: 2rem;
+  }
+  span {
+    margin-bottom: 30px;
+  }
+  ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    color: rgb(202, 200, 200);
+    li {
+      font-family: roboto;
+      text-decoration: underline;
+      text-underline-offset: 15px;
+    }
+  }
+}
