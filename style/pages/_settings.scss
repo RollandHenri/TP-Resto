@@ -1,0 +1,34 @@
+/**** Variable Couleur ****/
+
+$color1: rgb(226, 152, 14);
+
+/**** Font ****/
+
+@font-face {
+  font-family: Allura;
+  src: url(/assets/font/Allura-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/font/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/font/Poppins-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  cursor: default;
+}
+
+.orange {
+  color: $color1;
+  font-family: Allura;
+  font-weight: 300;
+}

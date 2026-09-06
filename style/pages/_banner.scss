@@ -1,0 +1,88 @@
+header {
+  font-family: Roboto;
+  height: 100vh;
+  background: url("/assets/img/bg-slider-06.jpg") center / cover fixed;
+  nav {
+    width: 85%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    color: white;
+    margin: 0 auto;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+    }
+    .menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0 30px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 600;
+      li {
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      img {
+        width: 15px;
+        height: 15px;
+        margin: 0 10px;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .headerTitle {
+    width: 100%;
+    height: calc(100vh - 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .headerTitleTop {
+      text-align: center;
+      h2 {
+        font-size: 3rem;
+        font-weight: 300;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 3rem;
+        letter-spacing: 8px;
+        padding: 5px 0;
+      }
+    }
+    .headerTopLogo {
+      img {
+        width: 30px;
+      }
+    }
+    p {
+      font-family: Roboto;
+      letter-spacing: 6px;
+      padding-top: 20px;
+    }
+  }
+}
