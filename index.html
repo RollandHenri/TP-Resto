@@ -220,28 +220,36 @@
         <div class="reservationFormTitle">
           <h3 class="orange">reservation</h3>
           <h3>Online booking</h3>
-          <span><img src="/assets/img/ic-plate.png" alt="logo" /></span>
+          <div><img src="/assets/img/ic-plate.png" alt="logo" /></div>
         </div>
 
         <div class="reservationFormFormulaire">
-          <form action="" class="fromGrid">
-            <input list="list" />
-            <datalist id="list">
-              <option value="1 pepole"></option>
-              <option value="2 pepole"></option>
-              <option value="3 pepole"></option>
-              <option value="4 pepole"></option>
-              <option value="5 pepole"></option>
-            </datalist>
+          <form action="" class="formGrid">
+            <div class="formTop">
+              <input list="list" value="Pepole" />
+              <datalist id="list">
+                <option value="1 pepole"></option>
+                <option value="2 pepole"></option>
+                <option value="3 pepole"></option>
+                <option value="4 pepole"></option>
+                <option value="5 pepole"></option>
+              </datalist>
 
-            <input type="date" />
-            <input type="time" />
-
-            <input type="text" name="name" id="name" placeholder="name" />
-            <input type="text" placeholder="phone" />
-            <input type="text" placeholder="Email" />
-
-            <input type="submit" name="" id="" />
+              <input type="date" />
+              <input type="time" />
+            </div>
+            <div class="formCenter">
+              <input
+                type="text"
+                class="name"
+                name="name"
+                id="name"
+                placeholder="Name"
+              />
+              <input type="text" class="phone" placeholder="Phone" />
+              <input type="text" class="mail" placeholder="Email" />
+            </div>
+            <input type="submit" name="" id="" value="Book Now" />
           </form>
         </div>
       </div>
@@ -257,7 +265,10 @@
       <div class="sectionEventContainer">
         <div class="sectionEventContainerFirst">
           <div class="containerFirstPic">
-            <img src="/assets/img/event-01.jpg" alt="event" />
+            <div class="befor">
+              <span class="number"> 08</span>
+              <span class="month">July</span>
+            </div>
           </div>
           <div class="containerFirstPara">
             <h6>Night Inspirescu Party</h6>
@@ -266,17 +277,24 @@
           </div>
         </div>
         <div class="sectionEventContainerSecond">
-          <div class="containerSecondPic">
-            <img src="/assets/img/event-02.jpg" alt="event" />
-          </div>
-          <div class="containerFirstPara">
+          <div class="containerSecondPic"></div>
+          <div class="containerSecondPara">
+            <div class="befor">
+              <span class="number"> 08</span>
+              <span class="month">July</span>
+            </div>
             <h6>DJ RobagRuhme</h6>
             <p><span></span>Restaurant Resto <span></span>10:00pm - 6:00am</p>
             <button>Buy Tickets</button>
           </div>
         </div>
         <div class="sectionEventContainerThird">
-          <img src="/assets/img/event-03.jpg" alt="event" />
+          <div class="containerThirdPic">
+            <div class="befor">
+              <span class="number"> 08</span>
+              <span class="month">July</span>
+            </div>
+          </div>
           <div class="containerThirdPara">
             <h6>Thousands celebrities at Johnnie Night</h6>
             <p><span></span>Restaurant Resto <span></span>10:00pm - 6:00am</p>

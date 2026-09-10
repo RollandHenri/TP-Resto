@@ -264,6 +264,7 @@ main {
 }
 .reservation .reservationHoraire {
   width: 40%;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,4 +305,293 @@ main {
 .reservation .reservationHoraire .reservationHoraireBorder .reservationHoraireWeek p {
   text-align: center;
   line-height: 25px;
+}
+.reservation .reservationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background: white;
+}
+.reservation .reservationForm .reservationFormTitle {
+  text-align: center;
+}
+.reservation .reservationForm .reservationFormTitle .orange {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-family: allura;
+}
+.reservation .reservationForm .reservationFormTitle h3 {
+  font-family: poppins;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+.reservation .reservationForm .reservationFormTitle img {
+  margin: 30px auto;
+}
+.reservation .reservationFormFormulaire .formGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.reservation .reservationFormFormulaire .formGrid .formTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reservation .reservationFormFormulaire .formGrid .formTop input {
+  width: 30%;
+  height: 25px;
+  margin: 10px auto;
+  border: none;
+  border-bottom: 1px solid rgba(77, 77, 77, 0.5);
+}
+.reservation .reservationFormFormulaire .formGrid .formCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.reservation .reservationFormFormulaire .formGrid .formCenter input {
+  width: 30%;
+  height: 25px;
+  margin: 10px auto;
+  border: none;
+  border-bottom: 1px solid rgba(77, 76, 76, 0.5);
+}
+.reservation .reservationFormFormulaire .formGrid input[type=submit] {
+  width: 40%;
+  color: white;
+  background: black;
+  border-radius: 25px;
+  height: 40px;
+  margin: 50px auto 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.reservation .reservationFormFormulaire .formGrid input[type=submit]:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 4px 14px black;
+}
+
+.sectionEvent {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 80px;
+}
+.sectionEvent .sectionEventTitle {
+  text-align: center;
+}
+.sectionEvent .sectionEventTitle .orange {
+  color: orange;
+  font-size: 2.5rem;
+  font-family: allura;
+}
+.sectionEvent .sectionEventTitle h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: poppins;
+  margin-top: -10px;
+}
+.sectionEvent .sectionEventTitle img {
+  margin: 30px auto;
+}
+.sectionEvent .sectionEventContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "topleft right" "bottomleft right";
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst {
+  grid-area: topleft;
+  display: flex;
+  margin: 0 20px 20px 0;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 200px;
+  background: url(/assets/img/event-01.jpg) center/cover;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPic .befor {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: black;
+  font-family: poppins;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPic .befor .number {
+  text-align: center;
+  font-size: 2rem;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPic .befor .month {
+  margin-top: -10px;
+  font-size: 1rem;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPara {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  width: 60%;
+  background: white;
+  padding: 20px 0 50px 15px;
+  font-family: roboto;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPara h6 {
+  color: grey;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPara p {
+  color: grey;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerFirst .containerFirstPara button {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond {
+  grid-area: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/img/event-03.jpg) center/cover;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond .containerSecondPara {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 85%;
+  height: 85%;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond .containerSecondPara .befor {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: black;
+  color: white;
+  font-family: poppins;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond .containerSecondPara .befor .number {
+  text-align: center;
+  font-size: 2rem;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond .containerSecondPara .befor .month {
+  margin-top: -10px;
+  font-size: 1rem;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond .containerSecondPara h6 {
+  color: grey;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: poppins;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond .containerSecondPara p {
+  color: grey;
+  margin-bottom: 15px;
+  font-family: poppins;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerSecond .containerSecondPara button {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird {
+  grid-area: bottomleft;
+  display: flex;
+  margin: 0 20px 0 0;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPic {
+  background: url(/assets/img/event-02.jpg) center/cover;
+  width: 40%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPic .befor {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: black;
+  font-family: poppins;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPic .befor .number {
+  text-align: center;
+  font-size: 2rem;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPic .befor .month {
+  margin-top: -10px;
+  font-size: 1rem;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPara {
+  width: 60%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  padding: 20px 0 50px 15px;
+  font-family: roboto;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPara h6 {
+  color: grey;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPara p {
+  color: grey;
+}
+.sectionEvent .sectionEventContainer .sectionEventContainerThird .containerThirdPara button {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.sectionEvent .sectionEventContainer img {
+  width: 200px;
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */
