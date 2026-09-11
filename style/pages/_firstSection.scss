@@ -3,6 +3,11 @@
   grid-template-columns: 50% 50%;
   background: white;
   height: 400px;
+  @media screen and (max-width: 770px) {
+    display: flex;
+    height: max-content;
+    width: 100%;
+  }
   .firstSectionLeft {
     display: flex;
     flex-direction: column;
@@ -10,8 +15,13 @@
     align-items: center;
     margin: 10px;
     border: dashed 1px orange;
+    @media screen and (max-width: 770px) {
+      width: max-content;
+      margin: 0;
+    }
     .firstSectionLeftTitle {
       text-align: center;
+
       .orange {
         font-size: 2.5rem;
         text-transform: capitalize;
@@ -56,9 +66,9 @@
     }
   }
   .firstSectionRight {
-    // img {
-    //   width: 100%;
-    // }
     background: url(/assets/img/store-01.jpg) center / cover;
+    @media screen and (max-width: 770px) {
+      display: none;
+    }
   }
 }

@@ -1,4 +1,4 @@
-/**** Variable Couleur ****/
+/**** Variable  ****/
 
 $color1: rgb(226, 152, 14);
 
@@ -29,6 +29,9 @@ $color1: rgb(226, 152, 14);
 
 body {
   background-color: rgb(48, 48, 48);
+  @media screen and (max-width: 770px) {
+    max-width: 100vw;
+  }
 }
 .orange {
   color: $color1;
